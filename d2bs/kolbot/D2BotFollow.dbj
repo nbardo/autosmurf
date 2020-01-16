@@ -29,7 +29,7 @@ var StarterConfig = {
 */
 
 var JoinSettings = {
-	"As1": ["all"]
+	"Sorceress_Lead_1": ["Barb_Follower_1", "Paladin_Follower_1"]
 };
 
 // Advanced config - you don't have to edit this unless you need some of the features provided
