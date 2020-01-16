@@ -14,11 +14,11 @@ function LoadConfig() {
 	 */
 
 	Scripts.AutoSmurf = true;
-		Config.AutoSmurf.TeamSize = 4;
-		Config.AutoSmurf.TeleportingSorc = "AbC"; // your leader sorceress charname.
-		Config.AutoSmurf.BoBarb = "BcD"; // boBarb charname
-		Config.AutoSmurf.OtherChars = ["CdE", "DeF"]; // all team charnames, excluding the leader and boBarb
-		Config.AutoSmurf.AllTeamProfiles = ["As1","As2","As3","As4"]; // the whole team PROFILE names
+		Config.AutoSmurf.TeamSize = 3;
+		Config.AutoSmurf.TeleportingSorc = "MagicYeti"; // your leader sorceress charname.
+		Config.AutoSmurf.BoBarb = "ScreamingYeti"; // boBarb charname
+		Config.AutoSmurf.OtherChars = ["BlessedYeti"]; // all team charnames, excluding the leader and boBarb
+		Config.AutoSmurf.AllTeamProfiles = ["Sorceress_Lead_1","Barb_Follower_1","Paladin_Follower_1"]; // the whole team PROFILE names
 
 	Config.AutoEquip = true;
 	Config.LowGold = 100000;
@@ -135,10 +135,10 @@ function LoadConfig() {
 	* Don't use more scripts of the same type! (Run AutoBaal OR BaalHelper, not both)
 	*/
 
-	Config.Leader = "AbC"; // Leader's ingame character name. Leave blank to try auto-detection (works in AutoBaal, Wakka, MFHelper)
-	Config.QuitList = ["As1"]; // List of character names to quit with. Example: Config.QuitList = ["MySorc", "MyDin"];
+	Config.Leader = "MagicYeti"; // Leader's ingame character name. Leave blank to try auto-detection (works in AutoBaal, Wakka, MFHelper)
+	Config.QuitList = ["Sorceress_Lead_1"]; // List of character names to quit with. Example: Config.QuitList = ["MySorc", "MyDin"];
 	Config.QuitListMode = 1; // 0 = use character names; 1 = use profile names (all profiles must run on the same computer).
-	Config.QuitListDelay = [3, 5]; // Quit the game with random delay in case of using Config.QuitList. Example: Config.QuitListDelay = [1, 10]; will exit with random delay between 1 and 10 seconds.
+	Config.QuitListDelay = [5, 7]; // Quit the game with random delay in case of using Config.QuitList. Example: Config.QuitListDelay = [1, 10]; will exit with random delay between 1 and 10 seconds.
 
 	Scripts.TristramLeech = false; // Enters Tristram, attempts to stay close to the leader and will try and help kill.
 	Scripts.TravincalLeech = false; // Enters portal at back of Travincal.
@@ -656,7 +656,7 @@ function LoadConfig() {
 												//	template filename located in libs/config/Builds/
 
 	Config.AutoBuild.Verbose = false;			//	Allows script to print messages in console
-	Config.AutoBuild.DebugMode = false;			//	Debug mode prints a little more information to console and 
+	Config.AutoBuild.DebugMode = true;			//	Debug mode prints a little more information to console and 
 												//	logs activity to /logs/AutoBuild.CharacterName._MM_DD_YYYY.log
 												//	It automatically enables Config.AutoBuild.Verbose
 }
